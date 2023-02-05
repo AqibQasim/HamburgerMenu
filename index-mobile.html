@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay-mobile {
+  height: 33%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.7);
+  overflow-x: hidden;
+  transition: 1s;
+}
+
+.overlay-mobilecontent {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-mobile a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 42px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-mobile a:hover, .overlay-mobile a:focus {
+  color: #f1f1f1;
+}
+
+.overlay-mobile .closebtn-mobile {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.overlay-mobile1 {
+  height: 33%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 33%;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.8);
+  overflow-x: hidden;
+  transition: 1.3s;
+}
+
+.overlay-mobilecontent1 {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-mobile1 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 42px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-mobile1 a:hover, .overlay-mobile1 a:focus {
+  color: #f1f1f1;
+}
+.overlay-mobile2 {
+  height: 33%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 66%;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 1.5s;
+}
+
+.overlay-mobilecontent2 {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-mobile2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 42px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay-mobile2 a:hover, .overlay-mobile2 a:focus {
+  color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<div id="mobile">
+<div id="myNav-mobile" class="overlay-mobile">
+  <a href="javascript:void(0)" class="closebtn-mobile" onclick="closeNavmobile()">&times;</a>
+  <div class="overlay-mobilecontent">
+    <b><a href="#">Cases</a></b>
+  </div>
+</div>
+<div id="myNav-mobile1" class="overlay-mobile1">
+  <div class="overlay-mobilecontent1">
+    <b><a href="#">About</a></b>
+  </div>
+</div>
+<div id="myNav-mobile2" class="overlay-mobile2">
+  <div class="overlay-mobilecontent2">
+   <b> <a href="#">Contact</a></b>
+  </div>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNavmobile()">&#9776; open</span>
+</div>
+<script>
+function openNavmobile() {
+  document.getElementById("myNav-mobile").style.width = "100%";
+  document.getElementById("myNav-mobile").style.height = "33%";
+  document.getElementById("myNav-mobile1").style.width = "100%";
+  document.getElementById("myNav-mobile1").style.height = "33%";
+  document.getElementById("myNav-mobile2").style.width = "100%";
+  document.getElementById("myNav-mobile2").style.height = "34%";
+}
+
+function closeNavmobile() {
+  document.getElementById("myNav-mobile").style.width = "0%";
+  document.getElementById("myNav-mobile1").style.width = "0%";
+  document.getElementById("myNav-mobile2").style.width = "0%";
+}
+</script>
+     
+</body>
+</html>
